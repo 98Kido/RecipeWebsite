@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF6F61;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.about-us {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+}
+
+.featured-recipes {
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.recipe-card {
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    width: 250px; /* Reduced width for better image size balance */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    max-width: 280px; /* Slightly smaller max width */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    font-size: 18px; /* Reduced font size to fit smaller card */
+    margin: 10px 0;
+}
+
+.recipe-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FF6F61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card a:hover {
+    background-color: #FF4C4C;
+}
+
+.more-recipes {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.exciting-recipes {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .recipe-card img {
+        max-width: 100%;
+    }
+
+    .recipe-card {
+        margin-bottom: 20px;
+        width: 100%; /* Adjusted width to be full for mobile screens */
+    }
+}
